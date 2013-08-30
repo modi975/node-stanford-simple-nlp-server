@@ -1,5 +1,5 @@
 {
-  "name": "node-stanford-simple-nlp-server",
+  "name": "stanford-simple-nlp-server",
   "version": "0.0.2",
   "private": true,
   "description": "A node.js express server for stanford-simple-nlp.",

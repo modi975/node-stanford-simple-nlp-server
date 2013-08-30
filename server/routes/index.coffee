@@ -1,14 +1,16 @@
 NLP = require 'stanford-simple-nlp'
-
 nlp = new NLP.StanfordSimpleNLP()
 nlp.loadPipelineSync()
 console.log 'Stanford CoreNLP initialized.'
 
+fs = require 'fs'
+packageConfig = JSON.parse fs.readFileSync "#{__dirname}/../../package.json"
+
 
 exports.index = index = (req, res) ->
   res.json
-    welcome: 'stanford-simple-nlp-server'
-    version: '0.0.1'
+    welcome: packageConfig.name
+    version: packageConfig.version
 
 
 exports.parse = parse = (req, res) ->
