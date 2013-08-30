@@ -2,7 +2,7 @@
   "name": "node-stanford-simple-nlp-server",
   "version": "0.0.1",
   "private": true,
-  "description": "A node.js express server for stanford-nlp-server.",
+  "description": "A node.js express server for stanford-simple-nlp.",
   "repository": {
     "type": "git",
     "url": "https://github.com/xissy/node-stanford-simple-nlp-server.git"
