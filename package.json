@@ -1,0 +1,31 @@
+{
+  "name": "node-stanford-simple-nlp-server",
+  "version": "0.0.1",
+  "private": true,
+  "description": "A node.js express server for stanford-nlp-server.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xissy/node-stanford-simple-nlp-server.git"
+  },
+  "keywords": [
+    "NLP",
+    "stanford",
+    "analysis",
+    "express",
+    "web",
+    "server",
+    "example"
+  ],
+  "author": "Taeho Kim <xissysnd@gmail.com>",
+  "license": "GPL3",
+  "dependencies": {
+    "express": "3.3.7",
+    "stanford-simple-nlp": "~0.0.1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "https://github.com/blai/grunt-contrib-watch/tarball/master",
+    "grunt-express-server": "~0.4.3",
+    "grunt-open": "~0.2.2"
+  }
+}
