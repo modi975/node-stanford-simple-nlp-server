@@ -1,9 +1,8 @@
 NLP = require 'stanford-simple-nlp'
 
-nlp = new NLP.StanfordSimpleNLP (err) ->
-  return console.log err  if err?
-  console.log 'Stanford CoreNLP initialized.'
-
+nlp = new NLP.StanfordSimpleNLP()
+nlp.loadPipelineSync()
+console.log 'Stanford CoreNLP initialized.'
 
 
 exports.index = index = (req, res) ->

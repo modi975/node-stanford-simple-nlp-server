@@ -1,6 +1,6 @@
 {
   "name": "node-stanford-simple-nlp-server",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "description": "A node.js express server for stanford-simple-nlp.",
   "repository": {
@@ -20,7 +20,7 @@
   "license": "GPL3",
   "dependencies": {
     "express": "3.3.7",
-    "stanford-simple-nlp": "~0.0.1"
+    "stanford-simple-nlp": "~0.0.4"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
