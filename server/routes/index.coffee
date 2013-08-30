@@ -20,6 +20,5 @@ exports.parse = parse = (req, res) ->
   nlp.process sourceText, (err, result) ->
     return res.send 500, err.message  if err?
 
-    res.json
-      sourceText: sourceText
-      result: result
+    result.sourceText = sourceText
+    res.json result
