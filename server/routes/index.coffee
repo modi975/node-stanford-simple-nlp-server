@@ -18,8 +18,14 @@ exports.parse = parse = (req, res) ->
 
   return res.send 400, 'no sourceText'  if not sourceText?
 
-  nlp.process sourceText, (err, result) ->
-    return res.send 500, err.message  if err?
+  nlp.process sourceText,
+    xml:
+      explicitRoot: false
+      explicitArray: false
+      attrkey: '@'
+  ,
+    (err, result) ->
+      return res.send 500, err.message  if err?
 
-    result.sourceText = sourceText
-    res.json result
+      result.sourceText = sourceText
+      res.json result
