@@ -1,6 +1,6 @@
 {
   "name": "stanford-simple-nlp-server",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": true,
   "description": "A node.js express server for stanford-simple-nlp.",
   "repository": {
